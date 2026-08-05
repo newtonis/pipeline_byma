@@ -23,8 +23,15 @@ Modelos Gold incluidos:
 
 
 <img width="892" height="592" alt="image" src="https://github.com/user-attachments/assets/7bf9e9fa-12f8-43c3-b55c-ce672148a012" />
-Diagrama de la arquitectura.
+
+_Imagen 1: Diagrama de la arquitectura._
 
 El proyecto se organiza en 5 archivos de pipeline (ETL_Bronze_instruments, ETL_Bronze_transactions, ETL_Silver_instruments, ETL_Silver_transactions y ETL_Gold) y 1 archivo de analisis exploratorio (Análisis_exploratorio)
 
 En la carpeta pipelines with outputs estan los notebooks con los resultados de las celdas ya ejecutadas, mientars que en la capeta pipelines hay una copia sin la ejecución.
+
+<img width="590" height="242" alt="image" src="https://github.com/user-attachments/assets/5ca297df-196a-423f-9f52-f9ba93abf491" />
+
+_Imagen 2: Organización de los esquemas del catalogo iol_challenge._
+
+## Propuesta de IA.
