@@ -1,6 +1,6 @@
 # Pipeline Byma
 
-Este proyecto es un pipeline de ingesta y transformación de data de byma hacia el data lakehouse de databricks.
+Este proyecto es un pipeline de ingesta, transformación y carga de data de byma hacia el data lakehouse de databricks.
 Para el diseño se uso una arquitectura medallion qué permitió separar la ingesta de distintas fuentes de datos en un modelo de datos unificado, y limpio.
 El proyecto consiste en 3 capas, bronce silver y gold, las cuáles permiten desacoplar el mantenimiento de la ingesta con el consumo del negocio.
 
