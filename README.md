@@ -36,7 +36,7 @@ _Imagen 2: Organización de los esquemas del catalogo iol_challenge._
 
 ## Propuesta de IA.
 
-Para mejorar el pipeline utilizando inteligencia artificial, se propone armar un agente qué resuelva preguntas de negocio teniendo disponibles las tablas de la etapa Gold. El agente tendría capacidad para armar una query y mostrar el resultado a partir del input escrito de la entrada de un usuario
+Para mejorar el pipeline utilizando inteligencia artificial, se propone armar un agente qué resuelva preguntas de negocio teniendo disponibles las tablas de la etapa Gold. El agente tendría capacidad para armar y ejecutar una query (Tendría una tool denominada execute_databricks.sql disponible) mostrando el resultado a partir de un input de entrada escrito por  un usuario.
 
 Se propone para administrar el flujo del agente un framework cómo [LangChain](https://www.langchain.com/). combinado con un motor de LLM, tal cómo el de Databricks.
 
@@ -109,4 +109,8 @@ WITH conjunto_a_analizar AS (
         FROM flagged_data GROUP BY id_cliente
 ) select id_cliente from data_agrupada_por_cliente WHERE cliente_con_transacciones_superiores_a_mercado=1 LIMIT 10
 ```
-    
+
+Comentarios finales:
+- Habría que proteger de forma defensiva la función execution_databricks_sql en el caso de qué el agente pueda alucinar, más allá de qué el promt explicite qué no se deben correr comandos distintos de SELECT.
+- Se podría monitorear el agente y su despliegue a producción usando algun framework cómo MLFlow
+- Se podría agregar agun modelo de Machine Learning para responder preguntas qué impliquen alguna predicción futura del mercado tomando la forma de una tool adicional para el modelo.
