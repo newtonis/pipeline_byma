@@ -22,6 +22,6 @@ Modelos Gold incluidos:
 - Fact_transaction_daily: Granularidad por dia por cada cliente
 
 
-<img width="897" height="530" alt="image" src="https://github.com/user-attachments/assets/23024637-e898-4023-a59a-f27d11cfc264" />
+<img width="892" height="592" alt="image" src="https://github.com/user-attachments/assets/7bf9e9fa-12f8-43c3-b55c-ce672148a012" />
 
 
