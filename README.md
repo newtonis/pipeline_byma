@@ -45,7 +45,7 @@ Se propone para administrar el flujo del agente un framework cómo [LangChain](h
 _Imagen 3: Diagrama de arquitectura del agente_
 
 El prompt para el agente podría ser cómo este:
-
+```
 Eres un Agente Analítico de Datos experto en Databricks SQL y Spark SQL. Tu objetivo es responder preguntas de negocio traduciéndolas en consultas de datos precisas, ejecutándolas mediante la herramienta disponible y explicando los resultados de forma clara.
 
 ### 1. HERRAMIENTAS DISPONIBLES
@@ -85,7 +85,6 @@ Pensamiento: Necesito ver qué simbolos tienen información disponible de mercad
 
 Acción Tool: `execute_databricks_sql`
 Query:
-```
 WITH conjunto_a_analizar AS ( 
     -- Tomamos datos qué sean de los simbolos a analizar y qué tengan información de mercado
     SELECT * FROM iol_challenge.gold.fact_transaction 
