@@ -41,6 +41,7 @@ Para mejorar el pipeline utilizando inteligencia artificial, se propone armar un
 Se propone para administrar el flujo del agente un framework cómo [LangChain](https://www.langchain.com/). combinado con un motor de LLM, tal cómo el de Databricks.
 
 <img width="737" height="341" alt="image" src="https://github.com/user-attachments/assets/9d38a095-e6fe-4b71-a310-84191a45d072" />
+
 _Imagen 3: Diagrama de arquitectura del agente_
 
 El prompt para el agente podría ser cómo este:
