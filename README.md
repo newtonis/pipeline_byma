@@ -112,5 +112,5 @@ WITH conjunto_a_analizar AS (
 
 Comentarios finales:
 - Habría que proteger de forma defensiva la función execution_databricks_sql en el caso de qué el agente pueda alucinar, más allá de qué el promt explicite qué no se deben correr comandos distintos de SELECT.
-- Se podría monitorear el agente y su despliegue a producción usando algun framework cómo MLFlow
+- Se podría monitorear el agente y su despliegue a producción usando algun framework cómo [MLFlow](https://mlflow.org/)
 - Se podría agregar agun modelo de Machine Learning para responder preguntas qué impliquen alguna predicción futura del mercado tomando la forma de una tool adicional para el modelo.
