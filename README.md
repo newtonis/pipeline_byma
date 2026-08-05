@@ -19,3 +19,6 @@ Modelos Gold incluidos:
 - Instrumentos (Dim)
 
 - Transacciones: Granularidad por dia por cada cliente (Fact)
+
+
+<img width="932" height="456" alt="image" src="https://github.com/user-attachments/assets/ba99ea92-1a4d-4af8-97c0-0e9dc025ba25" />
