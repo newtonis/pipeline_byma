@@ -14,11 +14,12 @@ Según cuál sea el modelo a ingestar (instruments o transactions), se genera el
 Esta etapa consiste en una seríe de modelos factuales y dimensionales con información agregada y enriquecida qué estan listos para ser consumidos por el negocio. Estos modelos tienen cada uno sus claves surrogadas.
 
 Modelos Gold incluidos:
-- Clientes (Dim)
-- Cotizaciones (Dim)
-- Instrumentos (Dim)
+- dim_clientes
+- dim_cotizaciones
+- dim_instrumentos
 
-- Transacciones: Granularidad por dia por cada cliente (Fact)
+- Fact_transaction: Información de transacciones con máxima granularidad
+- Fact_transaction_daily: Granularidad por dia por cada cliente
 
 
 <img width="932" height="456" alt="image" src="https://github.com/user-attachments/assets/ba99ea92-1a4d-4af8-97c0-0e9dc025ba25" />
