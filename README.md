@@ -23,5 +23,8 @@ Modelos Gold incluidos:
 
 
 <img width="892" height="592" alt="image" src="https://github.com/user-attachments/assets/7bf9e9fa-12f8-43c3-b55c-ce672148a012" />
+Diagrama de la arquitectura.
 
+El proyecto se organiza en 5 archivos de pipeline (ETL_Bronze_instruments, ETL_Bronze_transactions, ETL_Silver_instruments, ETL_Silver_transactions y ETL_Gold) y 1 archivo de analisis exploratorio (Análisis_exploratorio)
 
+En la carpeta pipelines with outputs estan los notebooks con los resultados de las celdas ya ejecutadas, mientars que en la capeta pipelines hay una copia sin la ejecución.
